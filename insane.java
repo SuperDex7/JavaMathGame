@@ -1,18 +1,18 @@
 import java.util.Scanner;
 import java.util.Random;
-public class hard {
+public class insane {
     
-    public static void hardDiff(){
+    public static void insaneDiff(){
         Random rand = new Random();
     Scanner kbInput = new Scanner(System.in);    
 int points = 0;
-int wrong = 2;
-System.out.println("Hard Difficulty!");
+int wrong = 1;
+System.out.println("Hidden Insane Difficulty!!");
 do {
-int first = rand.nextInt(30);
-int second = rand.nextInt(30);
-int multfirst = rand.nextInt(12);
-int multsecond = rand.nextInt(12);
+int first = rand.nextInt(1000);
+int second = rand.nextInt(1000);
+int multfirst = rand.nextInt(20);
+int multsecond = rand.nextInt(20);
 int what = rand.nextInt(3);
 int answer;
 int guess;
@@ -59,12 +59,11 @@ System.out.println(wrong + " Attempts left");
  }
  break;
 } 
-}while(points < 2 && wrong != 0);
+}while(points < 10);
 if (wrong == 0) {
     System.out.println("Dang you suck! Start over.");
 } else{
-    EndGame.endOfGame();
+    System.out.println("You beat the hardest difficulty!");
 }
-
 }
 }

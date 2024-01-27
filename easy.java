@@ -5,8 +5,12 @@ public class easy {
     static Random rand = new Random();
     
     public static void easyDiff(){
+        
         Scanner kbInput = new Scanner(System.in);    
     int points = 0;
+    int wrong = 5;
+    
+    System.out.println("Easy Difficulty");
     do {
     int first = rand.nextInt(10);
     int second = rand.nextInt(10);
@@ -24,7 +28,9 @@ public class easy {
     points++;
     System.out.println("Correct! Points = " + points);
     } else{
+        wrong--;
     System.out.println("Wrong dumb! Answer was:" + answer+ " Try again.");
+    System.out.println(wrong + " Attempts left");
      }
      break;
      case 1:
@@ -35,10 +41,19 @@ public class easy {
     points++;
     System.out.println("Correct! Points = " + points);
     } else{
+        wrong--;
     System.out.println("Wrong dumb! Answer was:" + answer+ " Try again.");
+    System.out.println(wrong + " Attempts left");
      }
      break;
     } 
-    }while(points < 10);
+    }while(points < 2 && wrong != 0);
+    if (wrong == 0) {
+        System.out.println("Dang you suck! Start over.");
+    } else{
+        EndGame.endOfGame();
+    }
+    
         }
+        
 }
