@@ -12,17 +12,16 @@ public class EndGame {
         if (choice == 0){
             System.out.println("Thank you for playing!");
         } else if (choice == 1){
-            
  if(main.getChoicewas() == 1){
-    diff = 2;
+    main.incrementChoicewas();
+    
     medium.mediumDiff();
 
- } else if(diff == 2){
-    diff = 3;
-
+ } else if(main.getChoicewas() == 2){
+    main.incrementChoicewas();
 hard.hardDiff();
-        } else if(diff == 3){
-            diff = 4;
+        } else if(main.getChoicewas() == 3){
+            main.incrementChoicewas();
             insane.insaneDiff();
     }
 }

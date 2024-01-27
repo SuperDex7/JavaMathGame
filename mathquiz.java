@@ -8,6 +8,9 @@ public class mathquiz {
     public int getChoicewas() {
         return choicewas;
     }
+    public int incrementChoicewas() {
+        return choicewas++;
+    }
 
     public static void main(String[] args) {
 
