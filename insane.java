@@ -7,7 +7,7 @@ public class insane {
     Scanner kbInput = new Scanner(System.in);    
 int points = 0;
 int wrong = 1;
-System.out.println("Hidden Insane Difficulty!!");
+System.out.println("Hidden Insane Difficulty!! 1 Life");
 do {
 int first = rand.nextInt(1000);
 int second = rand.nextInt(1000);

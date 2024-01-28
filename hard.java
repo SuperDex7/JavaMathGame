@@ -7,7 +7,7 @@ public class hard {
     Scanner kbInput = new Scanner(System.in);    
 int points = 0;
 int wrong = 2;
-System.out.println("Hard Difficulty!");
+System.out.println("Hard Difficulty! 2 Lives");
 do {
 int first = rand.nextInt(30);
 int second = rand.nextInt(30);

@@ -10,7 +10,7 @@ public class easy {
     int points = 0;
     int wrong = 5;
     
-    System.out.println("Easy Difficulty");
+    System.out.println("Easy Difficulty. 5 Lives");
     do {
     int first = rand.nextInt(10);
     int second = rand.nextInt(10);
@@ -47,7 +47,7 @@ public class easy {
      }
      break;
     } 
-    }while(points < 2 && wrong != 0);
+    }while(points < 10 && wrong != 0);
     if (wrong == 0) {
         System.out.println("Dang you suck! Start over.");
     } else{

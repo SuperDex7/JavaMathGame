@@ -8,7 +8,7 @@ public class medium {
         Scanner kbInput = new Scanner(System.in);    
     int points = 0;
     int wrong = 3;
-    System.out.println("Medium Difficulty");
+    System.out.println("Medium Difficulty. 3 Lives");
     do {
         int first = rand.nextInt(20);
         int second = rand.nextInt(20);
