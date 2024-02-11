@@ -28,7 +28,7 @@ points++;
 System.out.println("Correct! Points = " + points);
 } else{
     wrong--;
-System.out.println("Wrong dumb! Answer was:" + answer+ " Try again.");
+System.out.println("Wrong Answer! Answer was:" + answer+ " Try again.");
 System.out.println(wrong + " Attempts left");
  }
  break;
@@ -41,7 +41,7 @@ points++;
 System.out.println("Correct! Points = " + points);
 } else{
     wrong--;
-System.out.println("Wrong dumb! Answer was:" + answer+ " Try again.");
+System.out.println("Wrong Answer! Answer was:" + answer+ " Try again.");
 System.out.println(wrong + " Attempts left");
  }
  break;
@@ -54,14 +54,14 @@ points++;
 System.out.println("Correct! Points = " + points);
 } else{
     wrong--;
-System.out.println("Wrong dumb! Answer was:" + answer+ " Try again.");
+System.out.println("Wrong Answer! Answer was:" + answer+ " Try again.");
 System.out.println(wrong + " Attempts left");
  }
  break;
 } 
 }while(points < 2 && wrong != 0);
 if (wrong == 0) {
-    System.out.println("Dang you suck! Start over.");
+    System.out.println("You Lost! Start over.");
 } else{
     EndGame.endOfGame();
 }

@@ -9,8 +9,8 @@ int points = 0;
 int wrong = 1;
 System.out.println("Hidden Insane Difficulty!! 1 Life");
 do {
-int first = rand.nextInt(1000);
-int second = rand.nextInt(1000);
+int first = rand.nextInt(500);
+int second = rand.nextInt(500);
 int multfirst = rand.nextInt(20);
 int multsecond = rand.nextInt(20);
 int what = rand.nextInt(3);
@@ -28,7 +28,7 @@ points++;
 System.out.println("Correct! Points = " + points);
 } else{
     wrong--;
-System.out.println("Wrong dumb! Answer was:" + answer+ " Try again.");
+System.out.println("Wrong Answer! Answer was:" + answer+ " Try again.");
 System.out.println(wrong + " Attempts left");
  }
  break;
@@ -41,7 +41,7 @@ points++;
 System.out.println("Correct! Points = " + points);
 } else{
     wrong--;
-System.out.println("Wrong dumb! Answer was:" + answer+ " Try again.");
+System.out.println("Wrong Answer! Answer was:" + answer+ " Try again.");
 System.out.println(wrong + " Attempts left");
  }
  break;
@@ -54,14 +54,14 @@ points++;
 System.out.println("Correct! Points = " + points);
 } else{
     wrong--;
-System.out.println("Wrong dumb! Answer was:" + answer+ " Try again.");
+System.out.println("Wrong Answer! Answer was:" + answer+ " Try again.");
 System.out.println(wrong + " Attempts left");
  }
  break;
 } 
 }while(points < 10);
 if (wrong == 0) {
-    System.out.println("Dang you suck! Start over.");
+    System.out.println("You Lost! Start over.");
 } else{
     System.out.println("You beat the hardest difficulty!");
 }
